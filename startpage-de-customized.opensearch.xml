@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+    <ShortName>Startpage.com (de, customized)</ShortName>
+    <Description>Startpage.com in German with custom settings and Bing suggestions</Description>
+    <InputEncoding>UTF-8</InputEncoding>
+    <Image width="16" height="16" type="image/x-icon">https://www.startpage.com/assets/images/logo-16x16.png</Image>
+    <Url type="text/html" template="https://www.startpage.com/do/dsearch">
+        <Param name="query" value="{searchTerms}"/>
+        <Param name="cat" value="web"/>
+        <Param name="pl" value="opensearch"/>
+        <Param name="language" value="deutsch"/>
+        <Param name="prfh" value="disable_open_in_new_windowEEE1N1Nenable_post_methodEEE0N1Nnum_of_resultsEEE20"/>
+    </Url>
+    <Url type="application/x-suggestions+json" template="https://www.bing.com/osjson.aspx">
+        <Param name="query" value="{searchTerms}"/>
+        <Param name="mkt" value="de-de"/>
+    </Url>
+</OpenSearchDescription>
